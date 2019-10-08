@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+<<<<<font-family: 'Monoton', cursive;
+
+body{
+	background-image: url('background4.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding-top: 175px;
+}
+
+.style{
+	background-image: url('background4.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding-top: 175px;
+}
+.inscriptionbody{
+	background-image: url('background4.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding-top: 90px;
+}
+form.form {
+    display: table;
+    text-align: center;
+    margin: auto;
+}
+form{
+	padding-left:150px;
+	padding-right: 150px;
+	padding-bottom: 40px;
+	padding-top:40px;
+	background-color:white;
+	text-align: center;
+	border:thick double #FF6B57;
+	border-radius: 50px 50px;
+	background-image: url('formbackground.gif');
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+input[type=text] {
+  	background-color: #e7feaa;
+  	color: black;
+  	font-weight: bold;
+  	border-radius: 50px;
+  	text-decoration: none;
+  	border:2px solid black;
+}
+input[type=password] {
+  	background-color: #e7feaa;
+  	color: black;
+  	font-weight: bold;
+  	border-radius: 50px;
+  	text-decoration: none;
+  	border:2px solid black;
+}
+input[type=email]{
+	background-color: #e7feaa;
+	color: black;
+	border-radius: 50px;
+	text-decoration: none;
+	border:2px solid black;
+}
+input[type=date]{
+	background-color: #e7feaa;
+}
+
+input[type=tel]{
+	background-color: #e7feaa;
+  	color: black;
+  	font-weight: bold;
+  	border-radius: 50px;
+  	text-decoration: none;
+  	border:2px solid black;
+}
+
+a:link{
+	text-decoration: none;
+	color:white;
+}
+
+a:hover{
+	color:white;
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+	color:white;
+}
+
+.help{
+	display: inline-block;
+	position: relative;
+}
+
+.helpmenu{
+	display: none;
+  	min-width: 200px;
+  	position: absolute;
+  	right:-48px;
+}
+.helpmenu a{
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+}
+.helpmenu img{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 110px;
+	top: 80px;
+}
+.help:hover .helpmenu{
+	display: block;
+	background-color: #ad4977;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	text-align: center;
+	max-width: 200px;
+}
+
+.helpmenu a:hover{
+	background-color: black;
+	padding: 0px;
+}
+
+.halp{
+	font-size: 25px;
+}
+
+.halp:hover{
+	color:red;
+	text-shadow: 3px 3px black;
+}
+
+.buttonlogin{
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ca6c69;
+	padding-top: 6px;
+	padding-bottom: 8px;
+	padding-right: 60px;
+	padding-left:60px;
+	margin-top:30px;
+	border-radius: 15px;
+	border: none;
+	transition: all 0.4s ease 0s;
+	font-family: Arial Black;
+}
+
+.button2{
+	padding-right: 35px;
+	padding-left: 35px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.button:hover {
+	background-image: url('neon2.gif');
+	letter-spacing: 3px;
+	transition: all 0.4s ease 0s;
+}
+
+.formulaire{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.inscription{
+	position: absolute;
+	right: 1100px;
+	top:685px;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.inscription img{
+	height: 50px;
+	width: 50px;
+}
+
+.wink{
+	animation: blink 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.welcome{
+	position: absolute;
+	text-align: center;
+	width: 550px;
+	height: 150px;
+	top:15px;
+	right: 690px;
+	animation-name: jump;
+	animation: jump 1s 2;
+}
+.welcome img{
+	text-align: center;
+}
+
+@keyframes jump {
+    0% {top: -200;animation-timing-function: ease-in;}
+    50% {top: -300px;height: 200px;animation-timing-function: ease-out;}
+    55% {top: -250px; height: 120px;border-radius: 70px / 60px;animation-timing-function: ease-in;}
+    65% {top: 120px; height: 240px;border-radius: 70px;animation-timing-function: ease-out;}
+    95% {top: 0;animation-timing-function: ease-in;}
+    100% {top: 0;animation-timing-function: ease-in;}
+}
+
+.arrowdown{
+	position:absolute;
+    animation: arrow 1s infinite;
+}
+
+@keyframes arrow {
+    0% {top: 55;animation-timing-function: ease-in;}
+    50% {top: 140px;height: 100%;animation-timing-function: ease-out;}
+    55% {top: 160px; height: 100%;border-radius: 100% / 100%;animation-timing-function: ease-in;}
+    65% {top: 120px; height: 100%;border-radius: 100%;animation-timing-function: ease-out;}
+    95% {top: 55;animation-timing-function: ease-in;}
+    100% {top: 55;animation-timing-function: ease-in;}
+}
+
+.forminscription{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+    text-align: center;
+    margin: auto;
+    max-width: 250px;
+    text-shadow: 3px 3px black;
+
+}
+
+.gender{
+	margin-top: 8px;
+}
+
+.gender img{
+	height: 20px;
+	width: 20px;
+}
+
+.submit{
+	border-radius: 50px;
+	background-color: white;
+	border-color: black;
+	font-family:Arial Black;
+}
+
+.grade{
+	background-color: #e7feaa;
+	border-radius: 50px;
+	border:2px solid black;
+}
+
+.birthday{
+	border-radius: 50px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border:2px solid black;
+}
+
+.presentation{
+	border-radius: 15px;
+	background-color: #e7feaa;
+	font-weight: bold;
+	border:2px solid black;
+}
+
+.registerbutton{
+
+}
+
+.hobbies{
+	margin-top: 5px;
+}
+
+.formulaireinscription{
+	padding-bottom: 50px;
+}
+
+.top{
+	font-family: 'Monoton', cursive;
+	position:absolute;
+	top:-10px;
+	right:640px;
+	font-size: 75px;
+	text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+	color: red;
+
+}
+
+.requiredstars{
+	color:white;
+	font-size: 20px;
+	position: absolute;
+	right: 1090px;
+	top:870px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+}
+
+.r{
+	animation: lower 10s linear infinite;
+}
+
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4; text-shadow: none; 
+  }
+}
+
+@keyframes upper {
+  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+    opacity:.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.4; text-shadow: none; 
+  }
+}
+
+.rati{
+	animation: upper 10s linear infinite;
+}
+
+.register9{
+	border-radius: 25px;
+	background-color:#e7feaa; 
+	font-family:Arial Black;
+	border:2px solid black;
+}
+
+.register9:hover{
+	background-color: red;
+	font-size: 20px;
+}
+
+.mdpbutton{
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ca6c69;
+	padding-top: 6px;
+	padding-bottom: 8px;
+	padding-right: 60px;
+	padding-left:60px;
+	margin-top:30px;
+	border-radius: 15px;
+	border: none;
+	transition: all 0.4s ease 0s;
+	font-family: Arial Black;
+}
+
+.mdpbutton:hover{
+	background-image: url('neon2.gif');
+	letter-spacing: 3px;
+	transition: all 0.4s ease 0s;
+}
